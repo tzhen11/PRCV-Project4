@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!Makefile
+!README.md
+!sample.xml
+!main.cpp
+!settings.h
+!settings.cpp
