@@ -7,3 +7,6 @@
 !main.cpp
 !settings.h
 !settings.cpp
+!intrinsics.xml
+!ar.cpp
+!features.cpp

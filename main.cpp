@@ -1,3 +1,9 @@
+/*
+  Aafi Mansuri, Terry
+  Mar 2026
+  CS 5330 - Project 4: Calibration and Augmented Reality
+  Main program - camera calibration using checkerboard pattern detection
+*/
 #include "settings.h"
 
 int main(int argc, char* argv[]) {
@@ -25,6 +31,10 @@ int main(int argc, char* argv[]) {
     vector<Vec3f> point_set;
     vector<vector<Vec3f>> point_list;
     vector<vector<Point2f>> corner_list;
+
+    if (argc > 1) {
+    s.inputCapture.open(argv[1]);
+}
 
     // Build the 3D world points once
     for (int i = 0; i < s.boardSize.height; i++) {
